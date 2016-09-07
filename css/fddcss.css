@@ -1,0 +1,198 @@
+body, form, a, i, input, div, img, ul, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    font: 14px/22px Arial, "Hiragino Sans GB", "微软雅黑", "宋体";
+    color: #333;
+}
+
+ul, li {
+    list-style: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*input[type="text"]{*/
+/*border-color: #00b38a;*/
+/*}*/
+#container {
+    width: 1024px;
+    margin: 35px auto 0;
+    padding-bottom: 150px;
+}
+
+.context {
+    width: 744px;
+    float: right;
+}
+
+#search_box {
+    position: relative;
+    width: 740px;
+    height: 37px;
+}
+
+#search_input {
+    width: 570px;
+    height: 23px;
+    line-height: 23px;
+    float: left;
+    font-size: 16px;
+    padding: 5px 8px 5px 10px;
+    margin: 0;
+    border: 2px solid #00b38a;
+}
+
+#search_button {
+    height: 37px;
+    width: 148px;
+    color: #FFF;
+    font-size: 18px;
+    border: 2px solid #00b38a;
+    background: #00b38a;
+    float: right;
+    cursor: pointer;
+}
+
+.hotSearch {
+    overflow: hidden;
+    margin: 6px 0 18px;
+    clear: both;
+}
+
+.hotSearch dt {
+    width: 70px;
+    font-size: 14px;
+}
+
+.hotSearch dd {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.hotSearch dt, .hotSearch dd {
+    float: left;
+}
+
+#home_banner {
+    width: 744px;
+    height: 160px;
+    position: relative;
+    margin: 0 0 18px;
+    overflow: hidden;
+}
+
+#home_banner .banner_bg {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 612px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+}
+
+#home_banner .banner_bg li {
+    margin: 0;
+    padding: 0;
+    width: 612px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#home_banner .thumbs li i{
+    background: url("../images/thumb_cover.png") no-repeat;
+    width: 113px;
+    height: 42px;
+    position: absolute;
+
+}
+
+#home_banner .thumbs li.selected i{
+    background: 0;
+}
+
+#home_banner .banner_bg li img {
+    width: 100%;
+    height: 100%;
+}
+
+#home_banner .banner_control {
+    float: right;
+    width: 121px;
+    height: 160px;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+#home_banner .banner_control em {
+    width: 127px;
+    height: 50px;
+    background: url("../images/lg_control_current.png") 0 0 no-repeat;
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    left: -6px;
+    cursor: pointer;
+}
+
+.banner_control ul {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.banner_control ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#home_banner .thumbs li {
+    width: 113px;
+    height: 42px;
+    border: 4px solid #d3d3d3;
+    position: relative;
+}
+
+#da-thumbs {
+    width: 744px;
+    height: 117px;
+    position: relative;
+    margin: 0 0 25px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.da-thumbs li.last {
+    margin-right: 0;
+}
+
+.da-thumbs li {
+    float: left;
+    width: 113px;
+    height: 113px;
+    margin-right: 8px;
+    background: #fff;
+    position: relative;
+    border: 2px solid #fafafa;
+    overflow: hidden;
+}
+
+.da-thumbs li img {
+    width: 113px;
+    height: 113px;
+    border: none;
+    display: block;
+}
+.da-thumbs li div {
+    /*display: none;*/
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    background-color: rgba(0,179,138,0.9);
+}

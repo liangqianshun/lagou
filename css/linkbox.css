@@ -1,0 +1,71 @@
+body, div, ul, li {
+    margin: 0;
+    padding: 0;
+    font: 14px/22px Arial, "Hiragino Sans GB", "微软雅黑", "宋体"
+
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+    padding: 0 6px;
+}
+
+.lg_linkbox {
+    float: left;
+    padding: 15px 0 0 0;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-top: 1px solid #ececed;
+    overflow: hidden;
+    width: 744px;
+}
+
+.lg_linkbox .lg_linkbox_left {
+    float: left;
+    width: 60px;
+    font-size: 15px;
+    color: #333;
+}
+
+.lg_linkbox .lg_linkbox_right {
+    float: right;
+    width: 664px;
+    overflow: hidden;
+}
+
+.lg_linkbox .lg_linkbox_right ul {
+    overflow: hidden;
+}
+
+.lg_linkbox span {
+    float: left;
+    color: #777;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.lg_linkbox a {
+    white-space: nowrap;
+    float: left;
+    padding: 3px 3px;
+    color: #555555;
+    font-size: 12px;
+    text-decoration: none;
+    height: 15px;
+    line-height: 15px;
+    margin: 5px 0 5px -1px;
+}
+
+.lg_linkbox a:hover {
+    color: #00b38a;
+    text-decoration: underline;
+}
+
+.lg_linkbox .lg_linkbox_more {
+    text-decoration: underline;
+}

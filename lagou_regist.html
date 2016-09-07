@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>找工作-互联网招聘求职网-拉勾网</title>
+    <meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+    <meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+    <link rel="stylesheet" type="text/css" href="css/lagou_regist.css">
+</head>
+
+<body id="login_bg">
+    <div class="login_wrapper">
+        <div class="login_header">
+            <a href="#" class="logoRegist"></a>
+            <div id="cloud_s"><img src="img/cloud_s.png" width="81" height="52" alt="cloud"></div>
+            <div id="cloud_m"><img src="img/cloud_m.png" width="136" height="95" alt="cloud"></div>
+        </div>
+        <div class="login_box">
+            <form id="registerForm" class="loginForm" action="javascript:;" method="post">
+                <ul class="register_radio clearfix">
+                    <li>
+                        找工作
+                        <input type="radio" value="0" name="type">
+                    </li>
+                    <li>
+                        招人
+                        <input type="radio" value="1" name="type">
+                    </li>
+                </ul>
+                <span class="error" style="display: none;" id="chooseError">请选择使用拉勾的目的</span>
+                <input type="text" id="email" name="email" tabindex="1" placeholder="请输入常用邮箱地址">
+                <span class="error" style="display: block;" id="beError"></span>
+                <input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码">
+                <span class="error" style="display: block;" id="passwordError"></span>
+                <div id="vcodeWrap" style="display:none;">
+                    <input type="text" id="vcode" name="vcode" tabindex="3" placeholder="请输入验证码（不区分大小写）">
+                    <label class="vcode_img">
+                        <img src="img/create.jpg" width="113" height="42" id="vcodeImg">
+                        <span>看不清楚，<a>换一张</a></span>
+                    </label>
+                    <span class="error" style="display:none;" id="vcodeError"></span>
+                </div>
+                <label class="fl registerJianJu" for="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox" checked="" class="checkbox valid">我已阅读并同意<a href="#" target="_blank">《拉勾用户协议》</a>
+                </label>
+                <input type="submit" id="submitLogin" value="注 &nbsp; &nbsp; 册">
+                <input type="hidden" id="callback" name="callback" value="">
+                <input type="hidden" id="authType" name="authType" value="">
+                <input type="hidden" id="signature" name="signature" value="">
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+            </form>
+            <div class="login_right">
+                <div>已有拉勾帐号</div>
+                <a href="/login/login.html" class="registor_now">直接登录</a>
+                <div class="login_others">使用以下帐号直接登录:</div>
+                <a href="#" target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+                <a href="#" class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+                <a href="#" class="icon_weixin" target="_blank" title="使用微信帐号登录"></a>
+            </div>
+        </div>
+        <div class="login_box_btm"></div>
+    </div>
+</body>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/tools.js"></script>
+<script>
+var tools = new Tool;
+var chooseDir = document.getElementsByClassName("register_radio");
+var directions = chooseDir[0].getElementsByTagName("li");
+for (var i = 0; i < directions.length; i++) {
+    var flag=0;
+    directions[i].onclick = function() {
+        flag++;
+        var anotherDir = tools.getSiblings(this)[0];
+        anotherDir.className = "";
+        var oEms = anotherDir.getElementsByTagName("em");
+        for (var i = oEms.length - 1; i >= 0; i--) 
+        //for(var i=0;i<oEms.length-1;i++)
+        {   
+            anotherDir.removeChild(oEms[i]);
+        }
+        this.className = "current";
+        var container = document.createDocumentFragment();
+        var oEm = document.createElement("em");
+        container.appendChild(oEm);
+        this.appendChild(container);
+    }
+}
+$('#email').keyup(function(){
+    var emailVal=$('#email')[0].value;
+    console.log(emailVal);
+    var reg=/^(?:[0-9a-zA-Z._-]+)@(?:[0-9a-zA-Z]+)(?:\.[a-zA-Z]+){1,2}$/;
+    var oError=$("#beError")[0];
+    if(!reg.test(emailVal)){       
+        //console.log("邮箱匹配失败！");
+        oError.style.display="block";
+        oError.innerHTML="请输入有效的邮箱地址，如：vivi@lagou.com";
+        if(emailVal==""){
+        //console.log("输入内容为空");
+        oError.innerHTML="请输入常用邮箱地址";
+        }
+    }else{
+        //console.log("ok");
+        oError.style.display="none";
+    }
+});
+$('#password').keyup(function(){
+    var passwordVal=$('#password')[0].value;
+    //console.log(passwordVal);
+    var reg_pas=/^\w{6,16}$/;
+    var oPError=$("#passwordError")[0];
+    //console.log(oPError);
+    if(!reg_pas.test(passwordVal)){       
+        //console.log("邮箱匹配失败！");
+        oPError.style.display="block";
+        oPError.innerHTML="请输入6-16位密码，字母区分大小写";
+        if(passwordVal==""){
+        //console.log("输入内容为空");
+        oPError.innerHTML="请输入密码";
+        }
+    }else{
+        //console.log("ok");
+        oPError.style.display="none";
+    }
+});
+var registerBtn=document.getElementById("submitLogin");
+registerBtn.onclick=function(){
+    var chooseError=document.getElementById("chooseError");
+    var emailVal=$('#email')[0].value;
+    var passwordVal=$('#password')[0].value;
+    if(flag==0){
+        chooseError.style.display="block";
+    }else{
+        chooseError.style.display="none";
+    }
+    if(emailVal==""){
+        var oError=$("#beError")[0];
+        oError.innerHTML="请输入常用邮箱地址";
+    }
+    if(passwordVal==""){
+        var oPError=$("#passwordError")[0];
+        oPError.innerHTML="请输入密码";
+    }
+}
+
+</script>
+</html>

@@ -1,0 +1,85 @@
+.lg_fixed{
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    left: 0px;
+    background: transparent url("../images/lg_fixed_bg.png") repeat-x scroll 0% 0%;
+}
+.lg_fixed .lg_fixed_one{
+    width: 95px;
+    height: 54px;
+    background: transparent url("../images/lg_fixed_footbar.png") no-repeat scroll 0% 0%;
+    position: absolute;
+    top: -54px;
+    left: 50px;
+    z-index: 9900;
+}
+.lg_fixed img{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.lg_fixed .lg_fixed_span1{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 100;
+    color: #DAFAF4;
+    display: inline-block;
+    height: 30px;
+    background: transparent url("../images/lg_fixed_text.png") no-repeat scroll right 16px;
+    padding-right: 33px;
+    margin: 20px 0px 0px 450px;
+}
+.lg_fixed .lg_fixed_span2{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 100;
+    color: #DAFAF4;
+    display: inline-block;
+    height: 30px;
+    background: transparent url("../images/lg_fixed_text.png") no-repeat scroll right bottom;
+    padding-right: 33px;
+    margin: 20px 0px 0px 60px;
+}
+.lg_fixed .lg_fixed_a1{
+    margin-left:165px;
+    height: 64px;
+    position: absolute;
+    left: 790px;
+    background: transparent url("../images/lg_fixed_btn_green.png") repeat-x scroll 0% 0%;
+    padding: 0px 46px;
+}
+.lg_fixed .lg_fixed_a1:hover{
+    background: transparent url("../images/lg_fixed_btn_green_hover.png") repeat-x scroll 0% 0%;
+}
+.lg_fixed .lg_fixed_a1 span{
+    display: block;
+    width: 50px;
+    height: 64px;
+    background: transparent url("../images/lg_fixed_login.png") no-repeat scroll left center;
+}
+.lg_fixed .lg_fixed_right{
+    height: 64px;
+    width: 254px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9900;
+    background: transparent url("../images/lg_fixed_btn_red.png") repeat-x scroll 0% 0%;
+}
+.lg_fixed .lg_fixed_right .lg_fixed_a2{
+    display: inline-block;
+    height: 64px;
+    padding: 0px 46px;
+}
+.lg_fixed .lg_fixed_right .lg_fixed_a2:hover{
+    background: transparent url("../images/lg_fixed_btn_red_hover.png") repeat-x scroll 0% 0%;
+}
+.lg_fixed .lg_fixed_right .lg_fixed_a2 span{
+    display: block;
+    width: 120px;
+    height: 64px;
+    background: transparent url("../images/lg_fixed_register.png") no-repeat scroll left center;
+}

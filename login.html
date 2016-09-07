@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拉勾登录</title>
+    <link rel="stylesheet" href="css/hwbstyle.css"/>
+</head>
+<body class="lg_login_bg">
+        <div class="lg_login_wrap">
+            <div class="lg_login_header">
+                <a href="#" class="lg_login_logo"></a>
+                <div class="lg_login_cloud_s"><img src="images/lg_login_cloud_s.png" alt="" class="lg_login_img_s"/></div>
+                <div class="lg_login_cloud_m"><img src="images/lg_login_cloud_m.png" alt="" class="lg_login_img_m"/></div>
+            </div>
+            <div class="lg_login_box">
+                <form action="" method="post" class="lg_login_form">
+                  <input type="text" id="lg_login_email" placeholder="请输入登陆邮箱地址" /> <span class="lg_login_error" id="lg_login_email_error"></span>
+                    <input type="password" id="lg_login_pwd" name="pwd" placeholder="请输入密码"/>
+                    <span class="lg_login_error" id="lg_login_pwd_error">请输入密码</span>
+                    <label>
+                    <input id="remember" type="checkbox" name="autoLogin" checked="checked" class="lg_login_forget_pwd"  value="">
+                        <span>记住我</span>
+                    </label>
+                    <a href="#" class="lg_login_forget_pwd">忘记密码?</a>
+                    <input type="submit" value="登   陆" name="sub" class="lg_login_submit
+                    "/>
+                </form>
+                <div class="lg_login_right">
+                     <div>还没有拉勾账号?</div>
+                    <a href="#" class="lg_login_registor">立即注册</a>
+                    <div class="lg_login_other">使用以下帐号直接登录:</div>
+                    <a class="lg_login_sina"  target="_blank" href="#"></a>
+                    <a class="lg_login_qq" href="#"></a>
+                    <a class="lg_login_wechat"  href="#"></a>
+                </div>
+            </div>
+
+        </div>
+ <script type="text/javascript" src="js/tools.js"></script>
+ <script type="text/javascript" src="js/hwblg_login.js"></script>
+</body>
+</html>

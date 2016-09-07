@@ -1,0 +1,161 @@
+body,div,img,input,a,form{
+    margin: 0px;padding: 0;font-family: Arial, 'Hiragino Sans GB', 微软雅黑, 宋体;
+    font-size: 16px;
+}
+a{text-decoration: none}
+
+.lg_login_bg{
+    background: #00b38a url(../images/lg_login_bgwall.png) center 100px no-repeat;  width:100%;height: 100%;
+}
+.lg_login_bg .lg_login_wrap{
+    margin: 0 auto;
+    padding-top: 80px;
+    width:640px;
+    color: #777;
+    font-size: 16px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_header{
+    position: relative;
+    margin-bottom: 20px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_logo{
+    display: block;
+    border: 0;
+    width: 285px;
+    height: 62px;
+    margin: 30px 0 0 20px;
+    background: url(../images/lg_login_logo.png) no-repeat;}
+.lg_login_bg .lg_login_wrap .lg_login_cloud_s{
+    position: absolute;
+    left: 375px;
+    top:15px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_cloud_s .lg_login_img_s{width:81px;height: 52px;}
+
+.lg_login_bg .lg_login_wrap .lg_login_cloud_m{
+    position: absolute;
+    left: 470px;
+    top: -35px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_cloud_s .lg_login_img_m{height: 95px;width: 136px;}
+.lg_login_bg .lg_login_wrap .lg_login_box{
+    min-height: 150px;
+    background: #EAFFFD;
+    padding: 35px;
+    overflow: hidden;
+    font-size: 16px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form{
+    width:360px;
+    border-right: 1px dashed #999;
+    float: left;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form #lg_login_email{
+    display: block;
+    padding:6px 10px;
+    width: 286px;
+    font-size: 16px;
+    color: #777;
+    border:none;
+    height: 30px;
+    line-height: 30px;
+    transition: border 0.2s ease-in 0s;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form .lg_login_error{
+    display: none;
+    margin: -10px 0px 10px;
+    font-size: 14px;
+    color: #FF6A6A;
+    text-align: left;
+    background: transparent url("../images/lg_login_error.png") no-repeat scroll 0px 3px;
+    padding-left: 20px;
+    line-height: 22px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form #lg_login_pwd{
+    display: block;
+    padding:6px 10px;
+    width: 286px;
+    font-size: 16px;
+    color: #777;
+    border: medium none;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    transition: border 0.2s ease-in 0s;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form span{font-size: 16px;margin-right: 145px;}
+.lg_login_bg .lg_login_form input[type="text"] {
+ -webkit-box-shadow: 0 0 4px #b5f0e7;
+    -moz-box-shadow: 0 0 4px #b5f0e7;
+    box-shadow: 0 0 4px #b5f0e7;
+    margin: 0px 0px 20px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form .lg_login_forget_pwd{
+    font-size: 16px;
+    margin-right:10px;
+    color:#777;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form .lg_login_forget_pwd:hover{
+    color: #00b38a;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form .lg_login_submit{
+    display: block;
+    margin-top: 36px;
+    width: 155px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 46px;
+    clear: both;
+    float: left;
+    background: #00B38A none repeat scroll 0% 0%;
+    color: #FFF;
+    border: medium none;
+    text-align: center;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_form .lg_login_submit:hover{
+   background:#00A57F;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right{
+    font-size: 16px;
+    float: left;
+    margin: 10px 0 0 25px;
+    line-height: 30px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_registor{
+    background:url("../images/lg_login_registor.png") no-repeat scroll right center;
+    padding-right: 24px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#00B38A;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_registor:hover{
+    text-decoration:underline;
+}
+
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_other{
+    margin: 70px 0px 10px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_sina{
+    width: 54px;
+    height: 54px;
+    float: left;
+    background: url("../images/lg_login_w_q_s.png") no-repeat scroll left top;
+    margin: 0px 10px 0px 0px;
+    cursor:pointer;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_qq{
+    width: 54px;
+    height: 54px;
+    float: left;
+    background: url("../images/lg_login_w_q_s.png") no-repeat -73px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.lg_login_bg .lg_login_wrap .lg_login_box .lg_login_right .lg_login_wechat{
+    width: 54px;
+    height: 54px;
+    float: left;
+    background: url("../images/lg_login_w_q_s.png") no-repeat right top;
+}
+

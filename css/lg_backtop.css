@@ -1,0 +1,160 @@
+
+ .lg_backtop {
+    background: url(../images/lg_backtop.png) left top no-repeat;
+    width: 28px;
+    height: 64px;
+    position: fixed;
+    bottom: 140px;
+    right: 60px;
+    cursor: pointer;
+    display: none;
+}
+.lg_main_backtop .lg_backtop:hover{
+    background:url(../images/lg_backtop.png) -28px 0 no-repeat;
+}
+.lg_product-fk {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 48px;
+    cursor: pointer;
+
+}
+.lg_feedback-icon .lg_fb-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(../images/lg_feedback.png) left center no-repeat;
+    background-position: 0 0;
+}
+.lg_feedback-icon .lg_fb-icon:hover{
+url(../images/lg_feedback.png) left center no-repeat;
+    background-position: 0 -31px;
+}
+.lg_feedback-icon span {
+    font-size: 12px;
+    color: #555;
+}
+.lg_feedback-icon .lg_error .fk_limit{
+    width: 350px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: -45px;
+    left: -275px;
+    color: #fff;
+    background-color: #555;
+}
+.lg_feedback-icon .lg_error .fk-suc {
+    width: 110px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: -45px;
+    left: -35px;
+    color: #fff;
+    background-color: #555;
+}
+ .lg_feedback-con{
+     width:382px;
+     height:241px;
+     border: 1px solid #e7e7e7;
+     background-color: #fefef2;
+     border-radius: 3px;
+     box-shadow: 2px 4px 7px #ecebeb;
+     z-index: 21;
+     position: fixed;
+     right:48px;
+     bottom: 80px;
+     display: none;
+ }
+
+.lg_feedback-con .lg_pfb-pho {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: 50%;
+    margin-left: -30px;
+    background: url(../images/lg_feedback.png) no-repeat;
+    background-position: 0 -65px;
+}
+.lg_pfb-close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    background: url(../images/lg_close_notice.png)no-repeat;
+}
+.lg_product-fb{
+    margin:44px 13px 0;
+}
+/*.lg_feedback-con .lg_error {*/
+    /*width: 190px;*/
+    /*height: 30px;*/
+    /*text-align: center;*/
+    /*line-height: 30px;*/
+    /*position: absolute;*/
+    /*top: 135px;*/
+    /*left: 150px;*/
+    /*background-color: #555;*/
+    /*color: #fafafa;*/
+/*}*/
+/*.lg_feedback-con .error i.txt {*/
+    /*border: 5px solid #555;*/
+    /*position: absolute;*/
+    /*top: -10px;*/
+    /*left: 20px;*/
+/*}*/
+/*.lg_feedback-con .error i {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*overflow: hidden;*/
+    /*border: 5px solid #555;*/
+    /*position: absolute;*/
+    /*top: 30px;*/
+    /*left: 120px;*/
+/*}*/
+
+.lg_product-fb textarea {
+    width: 332px;
+    height: 114px;
+    margin: 0;
+    padding: 5px 11px;
+    border: 1px solid #f1f3e9;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.lg_product-fb .lg_pfb-email {
+    margin-top: 5px;
+    margin-left: 0;
+    padding: 0;
+}
+.lg_product-fb .lg_pfb-email input {
+    float: left;
+    width: 260px;
+    height: 37px;
+    margin: 0;
+    padding: 0 11px;
+    border: 1px solid #f1f3e9;
+    border-radius: 3px;
+    font: 14px/32px Arial,"Hiragino Sans GB","微软雅黑","宋体";
+}
+.lg_product-fb .lg_ensure {
+    width: 65px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    float: right;
+    background-color: #00b88d;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+}

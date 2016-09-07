@@ -1,0 +1,115 @@
+  body,div,ul,li,a,span{
+      margin: 0;
+      padding: 0;
+      font-family: "微软雅黑", Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  }
+  ul,li{
+      list-style: none;
+  }
+  a{
+      text-decoration: none;
+  }
+ .lg_header .lg_top_bannerC {
+    width: 100%;
+    height: 80px;
+    background:#FFFFFF url("../images/lg_topBannerC.jpg") center center no-repeat;
+    cursor: pointer;
+}
+
+.lg_header .lg_top_homosexuality_border {
+    height: 3px;
+    background: url(../images/lg_homosexuality_border.jpg) repeat-x;
+}
+.lg_header .lg_nav_all{
+    width:100%;
+    height: 60px;
+    background: #fafafa;
+}
+  .lg_header .lg_nav_all .lg_nav_center{
+       position:relative;
+      margin: 0 auto;
+      width: 1024px;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_img_homosexuality{
+      float: left;
+      margin-top: 10px;
+      height: 43px;
+      width: 229px;
+      background: url("../images/lg_homosexuality.png") no-repeat;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul{
+      float: left;
+      position: relative;
+      margin-left: 30px;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul li{
+      height: 60px;
+      display: inline-block;
+      position: relative;
+      z-index: 3;
+      margin: 0;
+      padding: 0 20px;
+  }
+  .lg_header .lg_nav_all .lg_nav_center  .lg_nav_ul .lg_nav_li_one{
+      border-bottom: 3px solid #00b38a;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul li a{
+      height: 57px;
+      line-height: 57px;
+      font-size: 20px;
+      font-weight:100;
+      color: #999;
+      float: left;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul li a:hover{
+      color: #555555;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul .lg_nav_beta_wrapper{
+      position: absolute;
+      left: 64px;
+      top: 10px;
+      height: 18px;
+      padding-left:15px;
+      background: transparent url(../images/lg_icon_beta_tail.png) no-repeat bottom left;
+  }
+  .lg_header .lg_nav_all .lg_nav_center .lg_nav_ul .lg_nav_beta{
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 100;
+      position: absolute;
+      left: 3px;
+      top: 0;
+      color: #fff;
+      background: #fd470c;
+      padding: 0 5px;
+      -moz-border-radius: 9px;
+      -webkit-border-radius: 9px;
+      border-radius: 9px;
+  }
+
+
+
+  .lg_header .lg_nav_all .lg_loginTop{
+      position:absolute;
+      right:8px;
+      top:0;
+	   background: #00b38a;
+
+  }
+  .lg_header .lg_nav_all .lg_loginTop li{
+      float: left;
+      color: #fff;
+      height: 22px;
+      background: #00b38a;
+      padding: 4px 0;
+      font-size: 14px;
+  }
+   .lg_header .lg_nav_all .lg_loginTop a{
+     font-size:14px;
+      color: #fff;
+      padding: 0 12px;
+  }
+  .lg_header .lg_nav_all .lg_loginTop a:hover{
+  color:#cceae3;
+  }
+  

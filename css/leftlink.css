@@ -1,0 +1,185 @@
+html, body, div, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font: 14px/22px '微软雅黑', 'microsoft yahei', arial, simsun, sans-self;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    width: 1024px;
+    margin: 35px auto 0;
+}
+
+.lg_left_sidebox {
+    width: 230px;
+
+    position: absolute;
+    z-index: 9000;
+}
+
+.lg_left_sidebox a {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.lg_left_sidebox a:link,
+.lg_left_sidebox a:visited {
+    text-decoration: none;
+    color: #555;
+}
+
+.lg_left_sidebox a:hover {
+    text-decoration: underline;
+    color: #00b38a;
+}
+
+/*
+.lg_left_menubox{
+    position: relative;
+}
+*/
+.lg_left_menumain {
+    width: 206px;
+    padding: 6px 12px;
+    border-top: 2px solid #fafafa;
+    border-left: 2px solid #fafafa;
+    border-bottom: 2px solid #fafafa;
+    background-color: #fafafa;
+}
+
+.lg_left_menumain_checked {
+    width: 208px;
+    border-top: 2px solid #c9cbce;
+    border-left: 2px solid #c9cbce;
+    border-bottom: 2px solid #c9cbce;
+    background-color: #fff;
+}
+
+.lg_left_menumain em {
+    display: inline-block;
+    margin-left: 2px;
+    width: 37px;
+    height: 17px;
+    background: url("../images/lg_left_label.png") no-repeat 0 0;
+}
+
+.lg_left_menumain h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 0 10px 8px;
+}
+
+.lg_left_menumain span {
+    display: block;
+    height: 14px;
+    width: 14px;
+    float: right;
+    background: url("../images/lg_left_label.png") no-repeat 0 -40px;
+}
+
+.lg_left_menumain a {
+    display: inline-block;
+    padding: 0 7px;
+    margin: 0 5px 5px 0;
+}
+
+.lg_left_subjob {
+    margin-top: 12px;
+    width: 230px;
+    height: 46px;
+    border-bottom: 2px solid #00b38a;
+    background-color: #fafafa;
+}
+
+.lg_left_subjob a {
+    display: block;
+    float: right;
+    height: 48px;
+    line-height: 48px;
+    width: 190px;
+    padding-left: 20px;
+    font-size: 18px;
+    background: url("../images/lg_left_label.png") no-repeat 170px -85px;
+}
+
+.lg_left_subjob a:hover {
+    text-decoration: none;
+}
+
+.lg_left_menushow {
+    position: absolute;
+    width: 540px;
+    padding: 15px 30px 15px;
+    left: 232px;
+    top: 0;
+    border: 2px solid #c9cbce;
+    z-index: -1;
+    background: white;
+}
+
+.lg_left_menushow ul {
+    margin-bottom: 20px;
+}
+
+.lg_left_menushow h3 {
+    width: 70px;
+    text-align: right;
+    float: left;
+    line-height: 28px;
+}
+
+.lg_left_menushow h3 a:link,
+.lg_left_menushow h3 a:visited {
+    color: #333;
+    text-decoration: underline;
+}
+
+.lg_left_menushow li {
+    width: 440px;
+    margin-left: 30px;
+    float: left;
+    overflow: hidden;
+}
+
+.lg_left_menushow li a {
+    padding: 0 10px;
+    line-height: 28px;
+    margin-left: -2px;
+    background: url("../images/lg_left_label.png") no-repeat -29px -37px;
+}
+
+.lg_left_menushow li a:link,
+.lg_left_menushow li a:visited {
+    color: #777;
+}
+
+.lg_left_menushow li a.hight:link,
+.lg_left_menushow li a.hight:visited {
+    color: #00b38a;
+}
+
+.lg_left_menushow li a:hover {
+    color: #00b38a;
+}
+
+.lg_left_menushow {
+    display: none;
+}
